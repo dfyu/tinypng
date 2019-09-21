@@ -24,14 +24,14 @@ function tinyImage (filepath) {
     if (isImage(filepath) && isFile(filepath)) {
         getTinyImagePath(filepath)
             .then(link => {
-                let ws = fs.createWriteStream(filepath)
-                let req = https.request(new URL(link), res => {
-                    res.pipe(ws)
-                })
+                let req = https.request(new URL(link), res => res.pipe(
+                    fs.createWriteStream(filepath)
+                ))
+                req.on('error', err => console.log(err))
                 req.end()
             })
+            .catch(err => console.log(err))
     }
-    
 }
 
 function isImage (filepath) {
