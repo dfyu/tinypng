@@ -1,10 +1,10 @@
 {
-  "name": "tinypng",
-  "version": "1.0.0",
+  "name": "richole-tinypng",
+  "version": "1.0.2",
   "description": "tinypng command",
   "main": "index.js",
   "bin": {
-      "tinypng": "./index"
+      "tinypng": "./index.js"
   },
   "author": "dafu yu",
   "license": "MIT"

@@ -52,7 +52,6 @@ function formatSize (size) {
 }
 
 function getTinyImagePath (filepath) {
-    console.log(filepath)
     return new Promise((resolve, reject) => {
         const req = https.request(new URL('https://api.tinify.com/shrink'), {
             method: 'post',
