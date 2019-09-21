@@ -1,0 +1,11 @@
+{
+  "name": "tinypng",
+  "version": "1.0.0",
+  "description": "tinypng command",
+  "main": "index.js",
+  "bin": {
+      "tinypng": "./index"
+  },
+  "author": "dafu yu",
+  "license": "MIT"
+}
