@@ -1,5 +1,5 @@
 {
-  "name": "richole-tinypng",
+  "name": "@dfyu/tinypng",
   "version": "1.0.3",
   "description": "tinypng command",
   "main": "index.js",
